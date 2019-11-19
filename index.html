@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>N7</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="form_check.js"></script>
+</head>
+<body class="home">
+<section id="strona">
+    <svg>
+        <defs>
+            <pattern id="img1" patternUnits="userSpaceOnUse" width="100%" height="650">
+                <image class='twombly'
+                       xlink:href="https://vignette.wikia.nocookie.net/masseffect/images/5/58/N7_Logo.png/revision/latest?cb=20120329033056"
+                       x="-30" y="-30"
+                       width="250" height="237"/>
+            </pattern>
+        </defs>
+        <circle class='circ' cx="100" cy="100" r="100" filter="url(#sparklin)"
+                style="stroke: red; stroke-width: 5; fill: url(#img1)"/>
+    </svg>
+    <nav class="left">
+        <ul>
+            <li><a href="index.html" class="str1">Strona główna</a></li>
+            <li><a href="#" class="str2" onclick="showElement('table'); hideElement('form'); hideElement('galeria'); hideElement('h2')">Tabela</a>
+            </li>
+            <li><a href="indo.html" class="str3">Galeria</a></li>
+            <li><a href="#" class="str4" onclick="showElement('form'); hideElement('table'); hideElement('galeria'); hideElement('h2')">Subskrybcja</a>
+            </li>
+        </ul>
+    </nav>
+    <article>
+        <section id="galeria">
+            <img class="galeria" title="Kliknij mnie" alt="wikipedia" src="https://images.wikia.nocookie.net/__cb91/masseffect/pl/images/8/89/Wiki-wordmark.png" usemap="#mapa" width="200"/>
+        </section>
+        <map name="mapa">
+            <area alt="odnosniik do wiki" shape="rect" coords="1, 1, 100, 100" href="https://masseffect.fandom.com/pl/wiki/N7">
+        </map>
+        <h2 id="h2">N7 to skrót wojskowy Przymierza Systemów. Litera N oznacza siły specjalne, a 7 najwyższy poziom doświadczenia
+            żołnierza. Jest to ranga tylko dla żołnierzy, którzy przeszli szkolenia i treningi, dla elity wojsk Przymierza.
+            Jednym z absolwentów tego stopnia jest Komandor Shepard.</h2>
+        <form id="form" action="#" method="get" class="hidden">
+            <fieldset name="dane_osobowe"><p><i> Koniecznie zapisz się na newsletter! </i>
+                </p> <label>Imię </label><input type="text" name="f_imie"/><span class="err"
+                                                                                                     id="e_imie"> </span>
+                <br/>
+                <label>Nazwisko </label><input type="text" name="f_nazwisko"/> <span class="err"
+                                                                                               id="e_nazwisko"> </span><br/>
+                <label>Płeć </label> <input name="f_plec"
+                                                      value="f_k"
+                                                      checked
+                                                      type="radio"/>kobieta
+                <input name="f_plec" value="f_m" type="radio"/>mężczyzna <br/>
+                <label>E-mail</label><input type="text" name="f_email"/><span class="err"
+                                                                              id="e_email"> </span> <br/>
+                <input type="submit" name="submit" value="Wyślij formularz" onclick="return validate(this.form);">
+            </fieldset>
+            <script > function showElement(e) {
+                document.getElementById(e).style.visibility = 'visible';
+            }
+
+            function hideElement(e) {
+                document.getElementById(e).style.visibility = 'hidden';
+            } </script>
+        </form>
+    </article>
+    <table  id="table" class="hidden">
+        <tr>
+            <th>Nr</th>
+            <th>Imie</th>
+            <th>Nazwisko</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Jan</td>
+            <td>Drakonian</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Frodo</td>
+            <td>Potter</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Marion</td>
+            <td>Holmes</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Walter</td>
+            <td>Smith</td>
+        </tr>
+    </table>
+    <div class="enter"></div>
+    <footer>Copyright Miotk Sp. z. o. o.</footer>
+</section>
+</body>
+</html>
