@@ -91,7 +91,7 @@ nav.left ul a, nav ul li a:visited {
     color: white;
     padding: 5px;
     margin: 3px;
-    background: darkred url(img/nav.png) no-repeat 0 2px;
+    background: darkred url(galeria/nav.png) no-repeat 0 2px;
 }
 
 nav ul a:hover {
