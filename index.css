@@ -101,7 +101,7 @@ nav ul a:hover {
 }
 
 .home, .str1, .str2, .str3, .str4, .str5 {
-    background-color: orange;
+    background-color: black;
     background-position: 97% 100%;
     padding-right: 15px;
     padding-left: 30px;
