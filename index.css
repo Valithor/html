@@ -1,13 +1,3 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,
-ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
-embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    font-size:100%;
-    vertical-align:baseline;
-}
 
 @font-face {
     font-family: 'LatoRegular';
@@ -123,8 +113,7 @@ nav ul a:hover {
 .home, .str1, .str2, .str3, .str4, .str5 {
     background-color: black;
     background-position: 97% 100%;
-    padding-right: 15px;
-    padding-left: 30px;
+    height: 100%;
     font-weight: bold;
 }
 
@@ -234,214 +223,19 @@ div.anim {
 }
 
 @keyframes anim {
-    0% {background-color:red; }
-    25%  {background-color:yellow; }
-    50%  {background-color:blue; }
-    75%  {background-color:green;}
-    100% {background-color:red; }
-=======
-
-@font-face {
-    font-family: 'LatoRegular';
-    src: url("/fonts/Lato/Lato-Regular.ttf");
-    font-style: normal;
-    font-weight: normal;
-}
-svg {
-    overflow: visible;
-    display: block;
-    margin: 5px;
-    padding: 5px;
-}
-body {
-    font-family: LatoRegular, sans-serif;
-    font-size: 62.5%;
-    margin: 0px;
-    padding: 0px;
-
-}
-
-#strona {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    border: solid 1px red;
-}
-
-footer {
-    height: 20px;
-    background: darkred;
-    margin: 0px;
-    padding: 0px;
-    border: solid 1px red;
-}
-
-article {
-    width: 78%;
-    height: 200px;
-    background: darkred;
-    float: left;
-    padding: 0px 0.76% 0px 0.76%;
-    border: solid 1px red;
-}
-
-nav {
-    position: relative;
-    top: 50px;
-    float: left;
-    width: 19%;
-    padding: 0px 0.5% 0px 0.5%;
-}
-
-section {
-    float: left;
-    width: 100%;
-    padding: 0.2% 1.5% 0.2% 1.5%;
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Free-Dark-Wallpaper-HD-Background.jpg");
-}
-
-.enter {
-    clear: both;
-}
-
-@media screen and (min-width: 480px) and (max-width: 1024px) {
-    aside {
-        display: none
+    0% {
+        background-color: red;
     }
-}
-
-@media screen and (min-width: 1024px) {
-    aside {
-        width: 22%;
-        float: left;
-        padding: 0px 10px 0px 15px;
-        background: darkred;
+    25% {
+        background-color: yellow;
     }
-}
-
-nav.left ul {
-    list-style-type: none;
-}
-
-nav.left ul a, nav ul li a:visited {
-    list-style-type: none;
-    display: block;
-    border: 2px solid darkred;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    padding: 5px;
-    margin: 3px;
-    background: darkred url(galeria/nav.png) no-repeat 0 2px;
-}
-
-nav ul a:hover {
-    font-weight: bold;
-    background-color: red;
-    background-position: 3px, 50%;
-}
-
-.home, .str1, .str2, .str3, .str4, .str5 {
-    background-color: black;
-    background-position: 97% 100%;
-    padding-right: 15px;
-    padding-left: 30px;
-    font-weight: bold;
-}
-
-h2, p {
-    text-transform: uppercase;
-    color: white;
-    font-family: serif;
-    font-size: 26px;
-}
-
-article p {
-    text-align: justify;
-    text-indent: 2em;
-    font-family: "Lato", serif;
-    font-size: 12px;
-    line-height: 20px;
-}
-form{
-    position: absolute;
-    top: 180px;
-    left: 450px;
-}
-
-label {
-    width: 150px;
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-    margin: 6px;
-}
-
-
-span.err {
-    color: red;
-    font-weight: bold;
-    padding-left: 5px;
-}
-table{
-    border: 3px darkgrey;
-    background-color: red;
-    position: absolute;
-    top: 180px;
-    left: 450px;
-}
-
-form.hidden, table.hidden {
-    visibility: hidden;
-}
-img.galeria{
-    position: absolute;
-    top: 320px;
-    left: 1160px;
-}
-article h3{
-    position: absolute;
-    background-color: black;
-    top: 170px;
-    left: 1080px;}
-
-img{
-    top: 250px;
-    left: 520px;
-    position: absolute;
-}
-video{
-    top: 250px;
-    left: 650px;
-    position: absolute;
-}
-input.dzwiek{
-    top: 250px;
-    left: 650px;
-    position: absolute;
-}
-iframe{
-    top: 200px;
-    left: 1080px;
-    position: absolute;
-}
-div.anim {
-    position: relative;
-    animation-name: anim ;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    width: 100%;
-    height: 200px;
-    background: orange;
-    float: left;
-}
-
-@keyframes anim {
-    0% {background-color:red; }
-    25%  {background-color:yellow; }
-    50%  {background-color:blue; }
-    75%  {background-color:green;}
-    100% {background-color:red; }
->>>>>>> 2b73bdb4d636da591cd030337b76c2d9a49924cb
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: red;
+    }
 }
